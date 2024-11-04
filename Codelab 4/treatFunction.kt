@@ -3,6 +3,14 @@ fun main() {
     trick()
 }
 
+fun trickOrTreat(isTrick: Boolean): () -> Unit {
+    if (isTrick) {
+        return trick
+    } else {
+        return treat
+    }
+}
+
 val trick = {
     println("No treats!")
 }
