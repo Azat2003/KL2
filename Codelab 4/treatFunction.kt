@@ -28,3 +28,4 @@ val trick = {
 
 val treat = {
     println("Have a treat!")
+}
