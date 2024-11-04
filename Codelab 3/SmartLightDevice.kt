@@ -38,3 +38,11 @@ class SmartTvDevice(deviceName: String, deviceCategory: String) :
         println("$name turned off")
     }
 }
+
+fun main() {
+    var smartDevice: SmartDevice = SmartTvDevice("Android TV", "Entertainment")
+    smartDevice.turnOn()
+    
+    smartDevice = SmartLightDevice("Google Light", "Utility")
+    smartDevice.turnOn()
+}
