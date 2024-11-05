@@ -8,5 +8,11 @@ fun main() {
 
 
 fun printNotificationSummary(numberOfMessages: Int) {
-    
+    val message = if (numberOfMessages < 100) {
+        "You have $numberOfMessages notifications."
+    } else {
+        "Your phone is blowing up! You have 99+ notifications."
+    }
+
+    println(message)
 }
