@@ -1,5 +1,7 @@
 fun main() {    
-    
+    val brunoSong = Song("We Don't Talk About Bruno", "Encanto Cast", 2022, 1_000_000)
+    brunoSong.printDescription()
+    println(brunoSong.isPopular)
 }
 
 
@@ -9,4 +11,3 @@ class Song(
     val yearPublished: Int, 
     val playCount: Int
 )
-    
