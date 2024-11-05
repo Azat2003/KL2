@@ -11,5 +11,8 @@ class Person(val name: String, val age: Int, val hobby: String?, val referrer: P
     fun showProfile() {
         println("Name: $name")
         println("Age: $age")
+        if(hobby != null) {
+            print("Likes to $hobby. ")
+        }
     }
 }
